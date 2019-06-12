@@ -1,0 +1,6 @@
+<div>
+  <button class="btn btn-primary" (click)="addCourse()">Add Course</button>
+</div>
+<div *ngIf="courses.length">
+  <app-course-list [courses]="courses"></app-course-list>
+</div>
